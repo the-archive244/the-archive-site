@@ -1,0 +1,2 @@
+const toggle=document.querySelector('.mobile-toggle');const menu=document.querySelector('.menu');if(toggle)toggle.addEventListener('click',()=>menu.classList.toggle('open'));
+const search=document.querySelector('#site-search');if(search)search.addEventListener('keydown',e=>{if(e.key==='Enter'){const q=e.target.value.trim().toLowerCase();if(q)location.href='noticias.html?q='+encodeURIComponent(q)}});
